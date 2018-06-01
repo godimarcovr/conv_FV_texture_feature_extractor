@@ -48,7 +48,7 @@ features = compute_conv_features_fn(features_file,features_file_cp, dataset, net
 %% train gmms
 encoder_file = fullfile(features_folder, 'encoder_pca_ifv.mat');
 set = 'images';
-n_imgs = 100;
+n_imgs = 1000;
 max_descrs_per_img = 64;
 pca_enabled = true;
 numWords = 64;
