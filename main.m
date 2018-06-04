@@ -57,4 +57,4 @@ encoders = train_gmm_fn(dataset, features, encoder_file, set, n_imgs, max_descrs
 %% build feat vectors
 sets = {'images'};
 encoded_features_file = fullfile(features_folder, 'pca_ifv_features_train.mat');
-compute_encoded_features_fn(encoded_features_file, dataset, sets, features, encoders, pca_enabled)
+[enc_features, labels] = compute_encoded_features_fn(encoded_features_file, dataset, sets, features, encoders, pca_enabled)

@@ -1,4 +1,4 @@
-function compute_encoded_features_fn(encoded_features_file, dataset, sets, features, encoders, pca_enabled)
+function [enc_features, labels] = compute_encoded_features_fn(encoded_features_file, dataset, sets, features, encoders, pca_enabled)
 % TODO no pca_enabled, just check if preprocessing step is present
 if exist(encoded_features_file, 'file')
     load(encoded_features_file)
